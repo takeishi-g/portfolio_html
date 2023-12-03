@@ -72,6 +72,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 150px;
+  margin-bottom: 30px;
 }
 
 #pickup article {
@@ -104,3 +105,12 @@ img {
   opacity: 0;
   transform: translateY(3px);
 }
+
+#main {
+  flex: 2;
+}
+
+#aside {
+  flex: 1;
+}
+

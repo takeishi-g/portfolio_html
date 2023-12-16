@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Tr Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header">
+    <header class="header">
       <h1 class="site-title wrapper">
         <a href="#"><img src="./images/logo.svg" alt="" /></a>
       </h1>
-      <nav id="nav">
-        <ul class="wrapper">
+      <nav id="nav" class="nav">
+        <ul class="wrapper container">
           <li><a href="#">NEW</a></li>
           <li><a href="#">COLUMN</a></li>
           <li><a href="#">SERIES</a></li>
@@ -28,49 +28,155 @@
         </ul>
       </nav>
     </header>
-    <div id="pickup" class="wrapper">
-      <article>
-        <img src="./images/pickup1.jpg" alt="" />
-        <h2>タイトル</h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-        <div class="read-more"><a href="">READ MORE</a></div>
-      </article>
-      <article>
-        <img src="./images/pickup2.jpg" alt="" />
-        <h2>タイトル</h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-        <div class="read-more"><a href="">READ MORE</a></div>
-      </article>
-      <article>
-        <img src="./images/pickup3.jpg" alt="" />
-        <h2>タイトル</h2>
-        <p>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-        <div class="read-more"><a href="">READ MORE</a></div>
-      </article>
-    </div>
-    <div id="container" class="wrapper">
-      <div class="main">
-        <article>
+    <div class="wrapper">
+      <div id="pickup" class="container">
+        <article class="article-container">
+          <a href="#">
+            <img src="./images/pickup1.jpg" alt="" />
+            <h2 class="article-title">タイトル</h2>
+            <p class="article-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </a>
+          <div class="read-more"><a href="">READ MORE</a></div>
+        </article>
+        <article class="article-container">
+          <img src="./images/pickup2.jpg" alt="" />
+          <h2 class="article-title`">タイトル</h2>
+          <p class="article-text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <div class="read-more"><a href="">READ MORE</a></div>
+        </article>
+        <article class="article-container">
+          <img src="./images/pickup3.jpg" alt="" />
           <h2 class="article-title">タイトル</h2>
-          <ul>
-            <li>2020/01/01</li>
-            <li>カテゴリ1</li>
-          </ul>
-          <div><img src="" alt=""></div>
-          <p></p>
+          <p class="article-text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
           <div class="read-more"><a href="">READ MORE</a></div>
         </article>
       </div>
-      <aside id="aside">
-        <!-- <div><img src="/images/author.jpg" alt=""></div> -->
-      </aside>
+
+      <div id="main" class="container">
+        <div class="posts posts-container">
+          <article>
+            <h2 class="article-title">タイトル</h2>
+            <ul>
+              <li>2020/01/01</li>
+              <li>カテゴリ1</li>
+            </ul>
+            <div><img src="./images/main1.jpg" alt="" /></div>
+            <p class="article-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <div class="read-more"><a href="">READ MORE</a></div>
+          </article>
+          <article>
+            <h2 class="article-title">タイトル</h2>
+            <ul>
+              <li>2020/01/01</li>
+              <li>カテゴリ1</li>
+            </ul>
+            <div><img src="./images/main2.jpg" alt="" /></div>
+            <p class="article-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <div class="read-more"><a href="">READ MORE</a></div>
+          </article>
+          <article>
+            <h2 class="article-title">タイトル</h2>
+            <ul>
+              <li>2020/01/01</li>
+              <li>カテゴリ1</li>
+            </ul>
+            <div><img src="./images/main3.jpg" alt="" /></div>
+            <p class="article-text">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <div class="read-more"><a href="">READ MORE</a></div>
+          </article>
+        </div>
+
+        <aside id="aside" class="aside-container">
+          <div class="profile aside-content-container">
+            <div class="profile-img">
+              <img src="/images/author.jpg" alt="" />
+            </div>
+            <h3 class="profile-title">NAME NAME</h3>
+            <p class="profile-text">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+
+          <div class="ranking aside-content-container">
+            <h3 class="ranking-title">Ranking</h3>
+            <article>
+              <div><img src="./images/ranking1.jpg" alt=""></div>
+              <p>タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+            </article>
+            <article>
+              <div><img src="./images/ranking2.jpg" alt=""></div>
+              <p>タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+            </article>
+            <article>
+              <div><img src="./images/ranking3.jpg" alt=""></div>
+              <p>タイトルテキストテキストテキストテキストテキストテキストテキスト</p>
+            </article>            
+          </div>
+
+          <div class="archive aside-content-container">
+            <h3 class="archive-title">Archive</h3>
+              <ul class="archive-list">
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+                <li><a href="">XXXX年XX月(XX)</a></li>
+              </ul>
+          </div>
+        </aside>
+      </div>
     </div>
+
+    <footer id="footer">
+      <div class="wrapper container">
+        <article class="article-container">
+          <h3 class="article-title">About</h3>
+          <p class="article-text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <ul class="about-list">
+            <li><a href="#" class="arrow">プロフィール詳細</a></li>
+            <li><a href="#" class="arrow">お仕事の依頼</a></li>
+            <li><a href="#" class="arrow">お問い合わせ</a></li>
+          </ul>
+        </article>
+
+        <article class="article-container">
+          <h3 class="article-title">Menu</h3>
+          <ul class="menu-list">
+            <li>NEW</li>
+            <li>CATEGORY</li>
+            <li>COLUMN</li>
+            <li>Q&A</li>
+          </ul>
+        </article>
+
+        <article class="article-container">
+          <h3 class="article-title">Twitter</h3>
+        </article>
+      </div>
+      <div class="copylight">Travel & Blog</div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

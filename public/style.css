@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;  
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
 }
 
 * {
@@ -36,6 +36,16 @@ ul {
   padding-left: 0;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 #pickup, #main {
   margin-bottom: 32px;
 }
@@ -55,18 +65,7 @@ ul {
   width: 32%;
 }
 
-.article-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 8px;
-}
 
-.article-text {
-  padding: 0 32px;
-  margin-bottom: 24px;
-  font-size: 1rem;
-}
 
 
 .header {
@@ -129,8 +128,12 @@ ul {
   padding: 24px 16px 0 16px;
 }
 
-.aside-content-container {
+.aside-content {
   margin-bottom: 32px;
+}
+
+.aside-content p {
+  font-size: 0.875rem;
 }
 
 .profile-img {
@@ -145,8 +148,6 @@ ul {
 
 .profile-title, .ranking-title, .archive-title {
   text-align: center;
-  font-size: 1.125rem;
-  font-weight: 600;
   margin-bottom: 32px;
 }
 
